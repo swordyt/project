@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="lib/|lib/poi.jar/|lib/ibatis/" kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="src/lib/json-lib-2.2.3-jdk15.jar"/>
+	<classpathentry kind="lib" path="src/lib/log4j-1.2.13.jar"/>
+	<classpathentry kind="lib" path="src/lib/commons-beanutils-1.7.0.jar"/>
+	<classpathentry kind="lib" path="src/lib/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="src/lib/commons-lang-2.3.jar"/>
+	<classpathentry kind="lib" path="src/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="src/lib/ezmorph-1.0.3.jar"/>
+	<classpathentry kind="lib" path="src/lib/poi.jar/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="src/lib/poi.jar/junit-3.8.1.jar"/>
+	<classpathentry kind="lib" path="src/lib/poi.jar/log4j-1.2.13.jar"/>
+	<classpathentry kind="lib" path="src/lib/poi.jar/poi-3.8-20120326.jar"/>
+	<classpathentry kind="lib" path="src/lib/poi.jar/poi-examples-3.8-20120326.jar"/>
+	<classpathentry kind="lib" path="src/lib/poi.jar/poi-excelant-3.8-20120326.jar"/>
+	<classpathentry kind="lib" path="src/lib/poi.jar/poi-ooxml-3.8-20120326.jar"/>
+	<classpathentry kind="lib" path="src/lib/poi.jar/poi-ooxml-schemas-3.8-20120326.jar"/>
+	<classpathentry kind="lib" path="src/lib/poi.jar/poi-scratchpad-3.8-20120326.jar"/>
+	<classpathentry kind="lib" path="src/lib/poi.jar/stax-api-1.0.1.jar"/>
+	<classpathentry kind="lib" path="src/lib/poi.jar/xmlbeans-2.3.0.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="src/lib/ibatis/mybatis-3.2.1.jar"/>
+	<classpathentry kind="lib" path="src/lib/ibatis/mybatis-spring-1.2.0.jar"/>
+	<classpathentry kind="lib" path="src/lib/ibatis/mysql-connector-java-5.1.28-bin.jar"/>
+	<classpathentry kind="lib" path="src/lib/commons-codec-1.8.jar"/>
+	<classpathentry kind="lib" path="src/lib/commons-httpclient-3.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

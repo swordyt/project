@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="entity.inter.t_ajd_agent_inter">
+<resultMap type="t_ajd_agent" id="resultList">
+        <id column="iAutoID" property="iAutoID" />
+        <result column="iUserID" property="iUserID" />
+        <result column="sName" property="sName" />
+        <result column="iIsCooperative" property="iIsCooperative" />
+        <result column="sMobile" property="sMobile" />
+        <result column="sServiceNo" property="sServiceNo" />
+        <result column="iDispatchIndex" property="iDispatchIndex" />
+        <result column="sIdCardPath" property="sIdCardPath" />
+        <result column="iStatus" property="iStatus" />
+        <result column="iCreateTime" property="iCreateTime" />
+        <result column="iUpdateTime" property="iUpdateTime" />
+    </resultMap>
+    <select id="selectBysMobile" parameterType="String" resultMap="resultList">
+        select * from `t_ajd_agent` where sMobile = #{sMobile}
+    </select>
+</mapper>

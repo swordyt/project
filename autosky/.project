@@ -1,0 +1,21 @@
+<projectDescription>
+  <name>autosky</name>
+  <comment>此版本主要为了兼容eTermLibrary为设计的，此版本不会关闭浏览器</comment>
+  <projects/>
+  <buildSpec>
+    <buildCommand>
+      <name>org.eclipse.jdt.core.javabuilder</name>
+    </buildCommand>
+    <buildCommand>
+      <name>com.genuitec.eclipse.ast.deploy.core.DeploymentBuilder</name>
+    </buildCommand>
+    <buildCommand>
+      <name>org.eclipse.m2e.core.maven2Builder</name>
+    </buildCommand>
+  </buildSpec>
+  <natures>
+    <nature>com.genuitec.eclipse.ast.deploy.core.deploymentnature</nature>
+    <nature>org.eclipse.jdt.core.javanature</nature>
+    <nature>org.eclipse.m2e.core.maven2Nature</nature>
+  </natures>
+</projectDescription>
