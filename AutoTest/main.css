@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: center;
+    padding-top: 10px;
+}
+.body{
+    width: 960px;
+    margin: 0 auto;
+    padding: 3px;
+    border: 2px solid #FF00FF;
+}
+div{
+    overflow: hidden;
+}
+.head{
+    width: 100%;
+    line-height: 40px;
+    height: 40px;;
+    float: left;
+    border-bottom: 3px solid #ffffff;
+    background-color:#989898 ;
+}
+.head h3{
+    text-align: center;
+}
+.right{
+    width: 80%;
+    /*background-color: aqua;*/
+}
+.right table{
+    width: 98%;
+    margin-right:5px;
+    margin-left: 5px;
+}
+.right table caption{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #FFFFFF;
+}
+.right table td a{
+    text-decoration: none;
+    padding: 3px;
+}
+.left{
+    width: 20%;
+    float: left;
+    background-color: #989898;
+}
+.left a{
+    text-decoration: none;
+    cursor: hand;
+}
+.left h4{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #FFFFFF;
+}
+.left ol li{
+    font-weight: bold;
+}
+.clear{
+    clear: both;
+}
+.control{
+    width: 100%;
+    background-color: #989898;
+}
+.control textarea{
+    width: 78%;
+    border: 5px solid #989898;
+    float: left;
+}
+.control ol{
+    width: 20%;
+    float: right;
+}
+.field h4{
+    display: inline;
+}
+.field a{
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    background: url("image/modify.png") no-repeat;
+    background-position: bottom right;
+}
+.bottom{
+    width: 100%;
+    border: 5px solid #989898;
+    text-align: center;
+    overflow: scroll;
+}
+.bottom table{
+    display: inline-block;
+    align-self: center;
+}
+.bottom input{
+    margin: 0;
+    padding: 0;
+}
+.bottom a{
+    text-decoration: none;
+}
+.bottom table tr{
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <script src="jquery-1.12.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#addfield").click(function(){
+                $(".field").append("<h4>"+$("input[name=field]").val()+"<a href='#'></a></h4>");
+                xmlhttp = new XMLHttpRequest();
+                xmlhttp.onreadystatechange=function(){
+                    if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+                        $()
+                    }
+                }
+            });
+            $(".field").delegate("h4 a","click",function(){
+                $(this).parent().remove();
+            });
+            $(".bottom fieldset table").delegate("a","click",function(){
+                name = $(this).name;
+                if(name == "edit"){
+                    alert("edit");
+                }
+                if(name == "addnew"){
+                    alert("addnew");
+                }
+                if(name == "qx"){
+                    alert("qx");
+                }
+            })
+        });
+    </script>
+    <title>AutoTest</title>
+</head>
+<body>
+<div class="body">
+    <div class="head">
+        <H3>请求实体构建</H3>
+    </div>
+    <div class="left">
+        <h4>测试请求列</h4>
+        <li><a href="#" name="1">request</a>&nbsp &nbsp5</li>
+        <li><a href="#" name="1">request</a>&nbsp &nbsp5</li>
+        <li><a href="#" name="1">request</a>&nbsp &nbsp5</li>
+        <li><a href="#" name="1">request</a>&nbsp &nbsp5</li>
+        <li><a href="#" name="1">request</a>&nbsp &nbsp5</li>
+        <li><a href="#" name="1">request</a>&nbsp &nbsp5</li>
+        <li><a href="#" name="1">request</a>&nbsp &nbsp5</li>
+        <li><a href="#" name="1">request</a>&nbsp &nbsp5</li>
+    </div>
+    <div class="right">
+        <div class="right_s">
+            <form method="post" action="#">
+                <div>
+                    <label for="reqname">请求名：</label>
+                    <input type="text" id="reqname" width="10px" />
+                    <label for="newfield">新增字段名：</label>
+                    <input type="text" name="field" ID="newfield">
+                    <input type="button" id="addfield" value="增加">
+                </div>
+                <div class="field">
+                    <label for="reqfield">请求字段：</label>
+                    <h4>domain</h4>
+                    <h4>url</h4>
+                    <h4>userid<a href="#"></a></h4>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="bottom">
+    <fieldset>
+        <legend>请求数据</legend>
+        <table border="1"     cellspacing= "0 " cellpadding= "0 ">
+            <tr>
+                <th>name</th>
+                <th>domain</th>
+                <th>url</th>
+                <th>操作</th>
+            </tr>
+            <tr>
+                <td><input type="text" value="request" disabled="true"></td>
+                <td><input type="text" value="www.baidu.com" disabled="disabled"></td>
+                <td><input type="text" value="/url" disabled="disabled"></td>
+                <td name="handle"><a href="#" name="edit">编辑</a><a href="" name="qx">取消</a></td>
+            </tr>
+            <tr>
+                <td><input type="text" value="request" disabled=""></td>
+                <td><input type="text" value="www.baidu.com" disabled=""></td>
+                <td><input type="text" value="/url" disabled=""></td>
+                <td name="handle"><a href="#" name="save">保存</a><a href="" name="qx">取消</a></td>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td name="handle"><a href="#" name="addnew">新增</a></td>
+            </tr>
+        </table>
+    </fieldset>
+    </div>
+</div>
+</body>
+</html>
